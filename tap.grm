@@ -1,0 +1,464 @@
+I ::=	  "title:	Thoughts & Prayers\n"
+	^ "author:	Davide Alberani <da@mimante.net>\n"
+	^ "language:	English\n"
+	^ "status:	beta\n"
+	^ "topic:	religion,society,shootings,disasters,doing-nothing,this-time-it-will-work\n"
+	^ "audience:	the ones who care\n"
+	^ "created:	2018-11-08\n"
+;
+
+S ::= BULLSHIT ;
+
+BULLSHIT ::= (
+	TAP (to|for) [VICTIMS] TARGET |
+	our TAP are with [VICTIMS] TARGET |
+	"Je suis" TARGET |
+	"We are all" [with VICTIMS] TARGET |
+	["We"] pray for [VICTIMS] TARGET) ^ ("."|"!") ["💔"|"❤"|"♡"|"🙏"]
+	["#" ^ TARGET ^ EVENT];
+
+TAP ::= thoughts (and|"&") prayers;
+
+VICTIMS ::= the [families of the] victims (in|of);
+
+EVENT := (
+	+++shooting |
+	++massacre |
+	flood |
+	fire |
+	earthquake |
+	disaster |
+	++attack
+) ;
+
+TARGET := (
+	 "Abidjan" |
+	 "Abu Dhabi" |
+	 "Abuja" |
+	 "Accra" |
+	 "Adamstown" |
+	 "Addis Ababa" |
+	 "Ahmedabad" |
+	 "Ahvaz" |
+	 "Alexandria" |
+	 "Algiers" |
+	 "Allahabad" |
+	 "Almaty" |
+	 "Alofi" |
+	 "Amman" |
+	 "Amsterdam" |
+	 "Andorra la Vella" |
+	 "Ankara" |
+	 "Antananarivo" |
+	 "Apia" |
+	 "Ashgabat" |
+	 "Asmara" |
+	 "Astana" |
+	 "Asunción" |
+	 "Athens" |
+	 "Auckland" |
+	 "Avarua" |
+	 "Baghdad" |
+	 "Baku" |
+	 "Bamako" |
+	 "Bandar Seri Begawan" |
+	 "Bandung" |
+	 "Bangalore" |
+	 "Bangkok" |
+	 "Bangui" |
+	 "Banjul" |
+	 "Baoding" |
+	 "Barcelona" |
+	 "Barranquilla" |
+	 "Basra" |
+	 "Basseterre" |
+	 "Beijing" |
+	 "Beirut" |
+	 "Belgrade" |
+	 "Belmopan" |
+	 "Belo Horizonte" |
+	 "Berlin" |
+	 "Bern" |
+	 "Bhopal" |
+	 "Birmingham" |
+	 "Bishkek" |
+	 "Bissau" |
+	 "Bloemfontein" |
+	 "Bogotá" |
+	 "Brades Estate" |
+	 "Brasília" |
+	 "Bratislava" |
+	 "Brazzaville" |
+	 "Bridgetown" |
+	 "Brisbane" |
+	 "Brussels" |
+	 "Bucharest" |
+	 "Budapest" |
+	 "Buenos Aires" |
+	 "Bujumbura" |
+	 "Bulawayo" |
+	 "Busan" |
+	 "Cairo" |
+	 "Calgary" |
+	 "Cali" |
+	 "Caloocan" |
+	 "Campinas" |
+	 "Canberra" |
+	 "Cape Town" |
+	 "Caracas" |
+	 "Cartagena" |
+	 "Casablanca" |
+	 "Castries" |
+	 "Cetinje" |
+	 "Changchun" |
+	 "Changsha" |
+	 "Chaozhou" |
+	 "Charlotte Amalie" |
+	 "Chengdu" |
+	 "Chennai" |
+	 "Chicago" |
+	 "Chișinău" |
+	 "Chittagong" |
+	 "Chongqing" |
+	 "Cockburn Town" |
+	 "Cologne" |
+	 "Colombo" |
+	 "Conakry" |
+	 "Copenhagen" |
+	 "Córdoba" |
+	 "Cotonou" |
+	 "Curitiba" |
+	 "Daegu" |
+	 "Daejeon" |
+	 "Dakar" |
+	 "Dalian" |
+	 "Dallas" |
+	 "Damascus" |
+	 "Dar es Salaam" |
+	 "Davao City" |
+	 "Delhi" |
+	 "Dhaka" |
+	 "Dili" |
+	 "Djibouti" |
+	 "Dodoma" |
+	 "Doha" |
+	 "Dongguan" |
+	 "Douala" |
+	 "Douglas" |
+	 "Dubai" |
+	 "Dublin" |
+	 "Durban" |
+	 "Dushanbe" |
+	 "Edinburgh of the Seven Seas" |
+	 "Ekurhuleni" |
+	 "El Aioun" |
+	 "Episkopi Cantonment" |
+	 "Faisalabad" |
+	 "Fez" |
+	 "Flying Fish Cove" |
+	 "Fortaleza" |
+	 "Foshan" |
+	 "Freetown" |
+	 "Fukuoka" |
+	 "Funafuti" |
+	 "Fuzhou" |
+	 "Gaborone" |
+	 "Georgetown" |
+	 "George Town" |
+	 "Gibraltar" |
+	 "Giza" |
+	 "Guadalajara" |
+	 "Guangzhou" |
+	 "Guatemala City" |
+	 "Guayaquil" |
+	 "Gujranwala" |
+	 "Gustavia" |
+	 "Gwangju" |
+	 "Hagåtña" |
+	 "Hamburg" |
+	 "Hamilton" |
+	 "Hanga Roa" |
+	 "Hangzhou" |
+	 "Hanoi" |
+	 "Harare" |
+	 "Harbin" |
+	 "Hargeisa" |
+	 "Havana" |
+	 "Hefei" |
+	 "Helsinki" |
+	 "Hiroshima" |
+	 "Ho Chi Minh City" |
+	 "Hong Kong" |
+	 "Honiara" |
+	 "Houston" |
+	 "Hyderabad" |
+	 "Ibadan" |
+	 "Incheon" |
+	 "Isfahan" |
+	 "Islamabad" |
+	 "Istanbul" |
+	 "İzmir" |
+	 "Jaipur" |
+	 "Jakarta" |
+	 "Jamestown" |
+	 "Jarabulus" |
+	 "Jeddah" |
+	 "Jerusalem" |
+	 "Jinan" |
+	 "Johannesburg" |
+	 "Juba" |
+	 "Kabul" |
+	 "Kampala" |
+	 "Kano" |
+	 "Kanpur" |
+	 "Kaohsiung" |
+	 "Karachi" |
+	 "Karaj" |
+	 "Kathmandu" |
+	 "Kawasaki" |
+	 "Kharkiv" |
+	 "Khartoum" |
+	 "Kiev" |
+	 "Kigali" |
+	 "King Edward Point" |
+	 "Kingston" |
+	 "Kingstown" |
+	 "Kinshasa" |
+	 "Kobe" |
+	 "Kolkata" |
+	 "Kuala Lumpur" |
+	 "Kutaisi" |
+	 "Kuwait City" |
+	 "Kyoto" |
+	 "Lagos" |
+	 "Lahore" |
+	 "Lanzhou" |
+	 "La Paz" |
+	 "Libreville" |
+	 "Lilongwe" |
+	 "Lima" |
+	 "Lisbon" |
+	 "Ljubljana" |
+	 "Lobamba" |
+	 "Lomé" |
+	 "London" |
+	 "Los Angeles" |
+	 "Luanda" |
+	 "Lucknow" |
+	 "Lusaka" |
+	 "Luxembourg" |
+	 "Madrid" |
+	 "Majuro" |
+	 "Makassar" |
+	 "Malabo" |
+	 "Malé" |
+	 "Managua" |
+	 "Manama" |
+	 "Mandalay" |
+	 "Manila" |
+	 "Maputo" |
+	 "Maracaibo" |
+	 "Marigot" |
+	 "Maseru" |
+	 "Mashhad" |
+	 "Mata-Utu" |
+	 "Mbabane" |
+	 "Medan" |
+	 "Medellin" |
+	 "Melbourne" |
+	 "Mexico City" |
+	 "Milan" |
+	 "Minsk" |
+	 "Mogadishu" |
+	 "Monaco" |
+	 "Monrovia" |
+	 "Monterrey" |
+	 "Montevideo" |
+	 "Montreal" |
+	 "Moroni" |
+	 "Moscow" |
+	 "Mumbai" |
+	 "Munich" |
+	 "Muscat" |
+	 "Nagoya" |
+	 "Nagpur" |
+	 "Nairobi" |
+	 "Nanjing" |
+	 "Nassau" |
+	 "Naypyidaw" |
+	 "N'Djamena" |
+	 "New Delhi" |
+	 "New Taipei City" |
+	 "New York City" |
+	 "Ngerulmud" |
+	 "Niamey" |
+	 "Nicosia" |
+	 "Ningbo" |
+	 "Nizhny Novgorod" |
+	 "Nouakchott" |
+	 "Nouméa" |
+	 "Novosibirsk" |
+	 "Nukuʻalofa" |
+	 "Nuuk" |
+	 "Omsk" |
+	 "Oran" |
+	 "Oranjestad" |
+	 "Osaka" |
+	 "Oslo" |
+	 "Ottawa" |
+	 "Ouagadougou" |
+	 "Pago Pago" |
+	 "Palembang" |
+	 "Palestine" |
+	 "Palikir" |
+	 "Panama City" |
+	 "Papeete" |
+	 "Paramaribo" |
+	 "Paris" |
+	 "Patna" |
+	 "Peshawar" |
+	 "Philadelphia" |
+	 "Philipsburg" |
+	 "Phnom Penh" |
+	 "Phoenix" |
+	 "Plymouth" |
+	 "Podgorica" |
+	 "Port-au-Prince" |
+	 "Port Louis" |
+	 "Port Moresby" |
+	 "Porto Alegre" |
+	 "Port of Spain" |
+	 "Porto-Novo" |
+	 "Port Vila" |
+	 "Prague" |
+	 "Praia" |
+	 "Pretoria" |
+	 "Pristina" |
+	 "Pune" |
+	 "Putrajaya" |
+	 "Pyongyang" |
+	 "Qingdao" |
+	 "Qom" |
+	 "Quanzhou" |
+	 "Quezon City" |
+	 "Quito" |
+	 "Rabat" |
+	 "Rawalpindi" |
+	 "Recife" |
+	 "Reykjavík" |
+	 "Riga" |
+	 "Rio de Janeiro" |
+	 "Riyadh" |
+	 "Road Town" |
+	 "Rome" |
+	 "Rosario" |
+	 "Roseau" |
+	 "Rostov-on-Don" |
+	 "Saint Petersburg" |
+	 "Saipan" |
+	 "Saitama" |
+	 "Salvador" |
+	 "Sana'a" |
+	 "San Antonio" |
+	 "San Diego" |
+	 "San José" |
+	 "San Juan" |
+	 "San Marino" |
+	 "San Salvador" |
+	 "Santa Cruz de la Sierra" |
+	 "Santiago" |
+	 "Santo Domingo" |
+	 "São Paulo" |
+	 "São Tomé" |
+	 "Sapporo" |
+	 "Sarajevo" |
+	 "Semarang" |
+	 "Seoul" |
+	 "Shanghai" |
+	 "Shantou" |
+	 "Shenyang" |
+	 "Shenzhen" |
+	 "Shijiazhuang" |
+	 "Shiraz" |
+	 "Singapore" |
+	 "Skopje" |
+	 "Sofia" |
+	 "Sri Jayawardenepura Kotte" |
+	 "Stanley" |
+	 "Stepanakert" |
+	 "St. George's" |
+	 "St. Helier" |
+	 "St. John's" |
+	 "Stockholm" |
+	 "St. Peter Port" |
+	 "St. Pierre" |
+	 "Sucre" |
+	 "Sukhumi" |
+	 "Surabaya" |
+	 "Surat" |
+	 "Suva" |
+	 "Suwon" |
+	 "Suzhou" |
+	 "Sydney" |
+	 "Tabriz" |
+	 "Taichung" |
+	 "Tainan" |
+	 "Taipei" |
+	 "Tallinn" |
+	 "Tangshan" |
+	 "Tarawa" |
+	 "Tashkent" |
+	 "Tbilisi" |
+	 "T'bilisi" |
+	 "Tegucigalpa" |
+	 "Tehran" |
+	 "The Valley" |
+	 "Thimphu" |
+	 "Tianjin" |
+	 "Tifariti" |
+	 "Tijuana" |
+	 "Tirana" |
+	 "Tiraspol" |
+	 "Tokyo" |
+	 "Toronto" |
+	 "Tórshavn" |
+	 "Tripoli" |
+	 "Tskhinvali" |
+	 "Tunis" |
+	 "Ulaanbaatar" |
+	 "Ulsan" |
+	 "Vaduz" |
+	 "Valletta" |
+	 "Vatican City" |
+	 "Victoria" |
+	 "Vienna" |
+	 "Vientiane" |
+	 "Vijayawada" |
+	 "Vilnius" |
+	 "Visakhapatnam" |
+	 "Warsaw" |
+	 "Washington" |
+	 "Wellington" |
+	 "Wenzhou" |
+	 "West Island" |
+	 "Willemstad" |
+	 "Windhoek" |
+	 "Wuhan" |
+	 "Xiamen" |
+	 "Xi'an" |
+	 "Yamoussoukro" |
+	 "Yangon" |
+	 "Yaoundé" |
+	 "Yaren" |
+	 "Yekaterinburg" |
+	 "Yerevan" |
+	 "Yokohama" |
+	 "Zagreb" |
+	 "Zhengzhou" |
+	 "Zhongshan" |
+	 "Zunyi" |
+	 "Bologna" |
+	 "Casalpusterlengo" |
+	 "Vergate sul Membro" |
+	 "D come Domodossola"
+) ;

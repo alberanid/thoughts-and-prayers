@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# this script should run inside a Docker container.
+#
+# If you want to use this grammar directly on your system, just run:
+#	polygen ./tap.grm
+
+PATH="${PATH}:/usr/games"
+
+TAP="$(polygen /tap.grm)"
+
+hashtag="$(echo "${TAP}" | cut -d '#' -f 2)"
+if [ -n "${hashtag}" ] ; then
+	newhashtag="$(echo "${hashtag}" | sed "s@[ '\.-]*@@g" | tr '[[:upper:]]' '[[:lower:]]')"
+	TAP="$(echo "${TAP}" | sed "s@#${hashtag}@#${newhashtag}@")"
+fi
+
+echo "${TAP}"
