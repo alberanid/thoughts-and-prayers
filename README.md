@@ -16,11 +16,17 @@ This time it will totally work.
 * feel a better person
 
 
+## Telegram bot
+
+A demo bot can be found here: https://t.me/ThoughtsAndPrayersBot
+
+You can use the *Dockerfile.telegram* file to create your own Telegram bot; don't forget to run it specifying the **TAPBOT_TOKEN** environment variable.
+
 ## Mastodon bot
 
 A demo bot can be found at [@thoughts_and_prayers](https://botsin.space/@thoughts_and_prayers)
 
-You can use the content of the *Dockerfile.mastodon* file to create your own Mastodon bot; don't forget to run it specifying the **TAPBOT_TOKEN** environment variable.
+You can use the *Dockerfile.mastodon* file to create your own Mastodon bot; don't forget to run it specifying the **TAPBOT_TOKEN** environment variable.
 
 
 # License
