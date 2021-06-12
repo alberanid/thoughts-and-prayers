@@ -4,7 +4,7 @@
 Build it with: docker build -f Dockerfile.telegram -t telegram-tap .
 Run it with something like: docker run -ti --rm -e TAPBOT_TOKEN=your-telegram-token telegram-tap
 
-Copyright 2018 Davide Alberani <da@erlug.linux.it> Apache 2.0 license
+Copyright 2018-2021 Davide Alberani <da@erlug.linux.it> Apache 2.0 license
 """
 
 import os
@@ -39,13 +39,13 @@ def getThoughtsAndPrayers():
 
 def tap(bot, update):
     a_tap = getThoughtsAndPrayers()
-    logging.info('%s wants some Thoughts & Prayers; serving:\n%s' % (update.message.from_user.name, a_tap))
-    update.message.reply_text(a_tap)
+    logging.info('%s wants some Thoughts & Prayers; serving:\n%s' % (bot.effective_user.username, a_tap))
+    bot.message.reply_text(a_tap)
 
 
 def about(bot, update):
-    logging.info('%s required more info' % update.message.from_user.name)
-    update.message.reply_text('See https://github.com/alberanid/thoughts-and-prayers')
+    logging.info('%s required more info' % bot.effective_user.username)
+    bot.message.reply_text('See https://github.com/alberanid/thoughts-and-prayers')
 
 
 if __name__ == '__main__':
